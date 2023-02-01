@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <main>
     <ListProject />
-  </div>
+  </main>
 </template>
 
 <script>
@@ -12,4 +12,8 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+main {
+  background-color: black;
+}
+</style>

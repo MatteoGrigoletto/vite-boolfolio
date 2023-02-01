@@ -1,16 +1,22 @@
 <template>
-  <div>
-    <ul>
-      <li v-for="proj in projects">{{ proj.name }}</li>
-    </ul>
-  </div>
+  <section>
+    <div class="card-sloat">
+      <div v-for="proj in projects">
+        <CardProject :data="proj" />
+      </div>
+    </div>
+  </section>
 </template>
 
 <script>
 import axios from "axios";
+import CardProject from "./CardProject.vue";
 
 export default {
   name: "listProject",
+  components: {
+    CardProject,
+  },
   data() {
     return {
       projects: [],
@@ -24,4 +30,11 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.card-sloat {
+  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+</style>
