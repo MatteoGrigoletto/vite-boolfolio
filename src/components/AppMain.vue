@@ -1,15 +1,15 @@
 <template>
-    <div>
-
-    </div>
+  <div>
+    <ListProject />
+  </div>
 </template>
 
 <script>
-    export default {
-        name:'AppMain',
-    }
+import ListProject from "./other/listProject.vue";
+export default {
+  name: "AppMain",
+  components: { ListProject },
+};
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>
