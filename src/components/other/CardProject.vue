@@ -2,6 +2,7 @@
   <div class="card">
     <h2 class="title">{{ data.name }}</h2>
     <p class="summary">{{ reduceText(data.summary) }}</p>
+    <button>Invia</button>
   </div>
 </template>
 
@@ -22,7 +23,7 @@ export default {
 <style lang="scss" scoped>
 .card {
   width: 300px;
-  height: 200px;
+
   padding: 20px;
   margin: 20px;
   border: 3px solid rgb(244, 244, 244);
@@ -30,8 +31,9 @@ export default {
   .title {
     font-weight: bold;
   }
-  .summary {
-    overflow-y: scroll;
+  button {
+    padding: 10px 20px;
+    border-radius: 20px;
   }
 }
 </style>
