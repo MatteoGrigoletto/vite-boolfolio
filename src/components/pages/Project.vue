@@ -8,7 +8,7 @@ export default {
   name: "Project",
   data() {
     return {
-      project: null,
+      project: "",
     };
   },
   created() {
