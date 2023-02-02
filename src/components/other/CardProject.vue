@@ -26,7 +26,7 @@ export default {
 
   padding: 20px;
   margin: 20px;
-  border: 3px solid rgb(244, 244, 244);
+  border: 3px solid rgb(244, 244, 242);
   background-color: rgb(173, 171, 171);
   .title {
     font-weight: bold;
