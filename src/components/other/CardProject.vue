@@ -2,7 +2,9 @@
   <div class="card">
     <h2 class="title">{{ data.name }}</h2>
     <p class="summary">{{ reduceText(data.summary) }}</p>
-    <button>Invia</button>
+    <router-link :to="{ name: 'Project', params: { slug: data.slug } }">
+      invia
+    </router-link>
   </div>
 </template>
 
