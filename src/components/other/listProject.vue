@@ -19,12 +19,13 @@ export default {
   },
   data() {
     return {
-      projects: [],
+      projects:[],
     };
   },
   created() {
     axios.get("http://127.0.0.1:8000/api/projects").then((responce) => {
-      this.projects = responce.data;
+      console.log(responce);
+      this.projects = responce.data.projects;
     });
   },
 };

@@ -15,4 +15,11 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+ul {
+  display: flex;
+  margin: 10px 30px;
+  justify-content: space-around;
+  list-style: none;
+}
+</style>

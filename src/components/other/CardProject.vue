@@ -1,7 +1,7 @@
 <template>
   <div class="card">
     <h2 class="title">{{ data.name }}</h2>
-    <p class="summary">{{ reduceText(data.summary) }}</p>
+    <p class="summary">{{ data.summary }}</p>
     <router-link :to="{ name: 'Project', params: { slug: data.slug } }">
       invia
     </router-link>
@@ -13,12 +13,7 @@ export default {
   name: "CardProject",
   props: {
     data: Object,
-  },
-  methods: {
-    reduceText(text) {
-      return text.substring(0, 200);
-    },
-  },
+  }
 };
 </script>
 
